@@ -10,3 +10,81 @@
 ]]--
 print("Don't be stupid kidding Skidder")
 local v0=loadstring(game:HttpGet("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion"))();local v1=v0:MakeWindow({IntroText="by Nitr0_Pitr0",Name="Nitro | Be a npc or die",HidePremium=false,SaveConfig=true,ConfigFolder=""});local v2=v1:MakeTab({Name="Information",Icon="rbxassetid://4483345998",PremiumOnly=false});v2:AddButton({Name="Inarki YouTube",Callback=function() print("button pressed");setclipboard("text going to clipboard goes here");toclipboard("https://youtube.com/@inarkici?si=TBDcywt_lDRawN-I");end});v2:AddLabel("Creator Sl4v4 or Nitr0_Pitr0");v2:AddButton({Name="Telegram RSO",Callback=function() print("button pressed");setclipboard("text going to clipboard goes here");toclipboard("https://t.me/robloxscriptorig");end});v2:AddButton({Name="Click to copy YouTube RSO",Callback=function() print("button pressed");setclipboard("text going to clipboard goes here");toclipboard("https://youtube.com/@robloxscriptorig?si=WseLdfA_LaPLjl1t");end});v2:AddButton({Name="Click to copy Youtube Nitr0_Pitr0",Callback=function() print("button pressed");setclipboard("text going to clipboard goes here");toclipboard("https://m.youtube.com/channel/UC_OZbww_vDIDu6kKn70iVng");end});local v2=v1:MakeTab({Name="Game",Icon="rbxassetid://4483345998",PremiumOnly=false});local v3=v2:AddSection({Name="Sheriff"});v2:AddButton({Name="Esp in round need click",Callback=function() print("button pressed");local v4=game:GetService("Players"):GetChildren();local v5=game:GetService("RunService");local v6=Instance.new("Highlight");v6.Name="Highlight";for v11,v12 in pairs(v4) do repeat wait();until v12.Character if  not v12.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then local v22=v6:Clone();v22.Adornee=v12.Character;v22.Parent=v12.Character:FindFirstChild("HumanoidRootPart");v22.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop;v22.Name="Highlight";end end game.Players.PlayerAdded:Connect(function(v13) repeat wait();until v13.Character if  not v13.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then local v29=v6:Clone();v29.Adornee=v13.Character;v29.Parent=v13.Character:FindFirstChild("HumanoidRootPart");v29.Name="Highlight";end end);game.Players.PlayerRemoving:Connect(function(v14) v14.Character:FindFirstChild("HumanoidRootPart").Highlight:Destroy();end);v5.Heartbeat:Connect(function() for v20,v21 in pairs(v4) do repeat wait();until v21.Character if  not v21.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then local v35=v6:Clone();v35.Adornee=v21.Character;v35.Parent=v21.Character:FindFirstChild("HumanoidRootPart");v35.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop;v35.Name="Highlight";task.wait();end end end);end});v2:AddButton({Name="Esp name",Callback=function() print("button pressed");loadstring(game:HttpGet("https://pastebin.com/raw/fprEyY5n"))();end});v2:AddButton({Name="Esp skeleton",Callback=function(v8) print(v8);local v9=loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/ESPs/main/UniversalSkeleton.lua"))();local v10={};for v15,v16 in next,game.Players:GetChildren() do table.insert(v10,v9:NewSkeleton(v16,true));end game.Players.PlayerAdded:Connect(function(v17) table.insert(v10,v9:NewSkeleton(v17,true));end);end});local v3=v2:AddSection({Name="Criminal"});v2:AddButton({Name="Instant Task",Callback=function() print("button pressed");for v18,v19 in ipairs(game:GetService("Workspace"):GetDescendants()) do if (v19.ClassName=="ProximityPrompt") then v19.HoldDuration=0;end end end});v2:AddButton({Name="Fly",Callback=function() print("button pressed");loadstring(game:HttpGet("https://raw.githubusercontent.com/RSOscrip/RSO_script/main/Fly"))();end});v2:AddButton({Name="Noclip",Callback=function() print("button pressed");loadstring(game:HttpGet("https://raw.githubusercontent.com/RSOscrip/Noclip/main/Noclip"))();end});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local CoreGui = game:GetService("StarterGui")
+    CoreGui:SetCore("SendNotification", {
+        Title = "Nitro hub",
+        Text = "Welcome "..game.Players.LocalPlayer.DisplayName,
+        Icon = "rbxthumb://type=AvatarHeadShot&id="..game.Players.LocalPlayer.CharacterAppearanceId.."&w=150&h=150",
+        Duration = 10,
+        Callback = AllowRunServiceBind,
+    })
